@@ -1,7 +1,7 @@
 import PN from "pubnub";
 import { waitUntil } from "../test-utils";
 import { init } from "..";
-import { credentials } from "./credentials";
+import { credentials } from "../credentials";
 const TEST_TIMEOUT = 20000;
 
 describe("pubnub-mobx", () => {
@@ -11,10 +11,7 @@ describe("pubnub-mobx", () => {
     },
     channel: "ch1",
     sendByPost: false, // true to send via post
-    storeInHistory: false, //override default storage options
-    meta: {
-      cool: "meta"
-    }
+    storeInHistory: false //override default storage options
   };
   test(
     "messages work",
@@ -38,6 +35,7 @@ describe("pubnub-mobx", () => {
         throw new Error("Message was not added to listeners");
       }
       expect(message.message).toEqual(TEST_MESSAGE.message);
+      destroy();
     },
     TEST_TIMEOUT
   );

@@ -2,7 +2,7 @@ import PN from "pubnub";
 import { waitUntil } from "../test-utils";
 import { init } from "..";
 import { credentials } from "../credentials";
-const TEST_TIMEOUT = 20000;
+const TEST_TIMEOUT = 40000;
 
 describe("pubnub-mobx", () => {
   const TEST_MESSAGE = {
@@ -10,7 +10,7 @@ describe("pubnub-mobx", () => {
       such: "object"
     },
     channel: "ch1",
-    sendByPost: false, // true to send via post
+    sendByPost: true, // true to send via post
     storeInHistory: false //override default storage options
   };
   test(

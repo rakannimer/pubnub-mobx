@@ -9,7 +9,6 @@
     "build": "rm -rf ./dist/ && rollup -c",
     "test:i": "jest --watch --coverage",
     "test": "jest --coverage",
-    "prepublish": "npm run test && npm run build",
     "c": "git-cz",
     "setup:semantic-release": "npx semantic-release-cli setup",
     "semantic-release": "semantic-release"
@@ -43,7 +42,7 @@
   "jest": {
     "preset": "ts-jest",
     "collectCoverageFrom": [
-      "src/*.{ts,tsx}"
+      "src/index.{ts,tsx}"
     ],
     "testPathIgnorePatterns": [
       "node_modules/",

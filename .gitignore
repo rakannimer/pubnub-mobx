@@ -5,4 +5,3 @@ dist/
 build/
 coverage/
 .vscode
-credentials.ts

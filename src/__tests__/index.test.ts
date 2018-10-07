@@ -55,7 +55,6 @@ describe("pubnub-mobx", () => {
       await waitUntil(listeners.status, ({ oldValue, newValue }) => {
         return !!newValue;
       });
-      // expect(publishers.message.get()).toEqual({});
       const status = listeners.status.get();
       if (status === null) {
         throw new Error("status was not added to listeners");

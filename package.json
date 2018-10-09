@@ -1,8 +1,8 @@
 {
   "name": "pubnub-mobx",
   "version": "0.0.0-development",
-  "main": "dist/index.js",
-  "module": "dist/index.m.js",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "start": "npm run test:i",

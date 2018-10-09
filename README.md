@@ -1,5 +1,9 @@
 ## Pubnub Mobx
 
+[![CircleCI][circleci-badge]][circleci-href]
+[![NPM][npm-version-badge]][npm-href]
+[![BundlePhobia][bundlephobia-badge]][bundlephobia-href]
+
 ### Peer Dependencies
 
 This library relies on having mobx and pubnub installed. If you haven't installed them previously :
@@ -98,3 +102,15 @@ When called init returns an object with the shape :
 ## Pubnub JS Docs
 
 https://www.pubnub.com/docs/web-javascript/pubnub-javascript-sdk
+
+## MobX Docs
+
+https://mobx.js.org
+
+[circleci-href]: https://circleci.com/gh/rakannimer/pubnub-mobx
+[circleci-badge]: https://img.shields.io/circleci/project/github/rakannimer/pubnub-mobx.svg
+[npm-href]: https://www.npmjs.com/package/pubnub-mobx
+[npm-version-badge]: https://img.shields.io/npm/v/pubnub-mobx.svg
+[npm-license-badge]: https://img.shields.io/github/license/rakannimer/pubnub-mobx.svg
+[bundlephobia-badge]: https://img.shields.io/bundlephobia/minzip/pubnub-mobx.svg
+[bundlephobia-href]: https://bundlephobia.com/result?p=pubnub-mobx

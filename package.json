@@ -52,8 +52,9 @@
     ]
   },
   "description": "Convert pubnub data streams to a mobx observable boxes.",
-  "dependencies": {
-    "lodash.memoize": "^4.1.2",
-    "pubnub": "^4.21.5"
+  "dependencies": {},
+  "peerDependencies": {
+    "mobx": ">=5",
+    "pubnub": ">=4"
   }
 }

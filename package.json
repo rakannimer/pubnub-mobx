@@ -11,7 +11,8 @@
     "test": "jest --coverage",
     "c": "git-cz",
     "setup:semantic-release": "npx semantic-release-cli setup",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "prepublish": "npm run build"
   },
   "husky": {
     "pre-commit": "prettier src/* --write",
